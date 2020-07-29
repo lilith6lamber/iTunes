@@ -75,4 +75,6 @@ const videoPlayer = document.querySelector('.video-player'),
     videoVolume.addEventListener('input', () => {
         videoPlayer.volume = videoVolume.value / 100;
     });
+
+    videoVolume.value = videoPlayer.volume * 100;
 }

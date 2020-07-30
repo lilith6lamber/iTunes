@@ -77,4 +77,10 @@ const videoPlayer = document.querySelector('.video-player'),
     });
 
     videoVolume.value = videoPlayer.volume * 100;
+
+    videoPlayerInit.stop = () => {
+        if (!videoPlayer.paused) {
+            stopPlay();
+        }
+    };
 }
